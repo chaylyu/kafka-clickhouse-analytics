@@ -2,7 +2,7 @@
 
 ## Grafana Dashboard
 
-![Grafana Dashboard](screenshots/grafana_dashboard.png)
+![Grafana Dashboard](screenshots/Untitled 3.png)
 
 > Real-time observability dashboard showing throughput, p95 latency, error rate, and total ingested events.
 
