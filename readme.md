@@ -1,5 +1,11 @@
 # Kafka → ClickHouse Real-Time Analytics Pipeline
 
+## Grafana Dashboard
+
+![Grafana Dashboard](screenshots/grafana_dashboard.png)
+
+> Real-time observability dashboard showing throughput, p95 latency, error rate, and total ingested events.
+
 ## Overview
 This project implements a real-time streaming analytics pipeline using **Kafka** and **ClickHouse**.
 It simulates API usage events, ingests them via Kafka, processes them with a Python consumer, and stores them in ClickHouse for 
