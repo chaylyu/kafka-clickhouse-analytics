@@ -15,6 +15,18 @@ low-latency analytical queries.
 The goal of the project is to demonstrate production-minded data engineering concepts such as streaming ingestion, batching strategies, 
 and analytical data modeling.
 
+## Ingestion Design
+
+The initial version of this project used a Python Kafka consumer with in-memory batching.
+The final implementation uses ClickHouse Kafka Engine tables combined with a Materialized View.
+
+This allows ClickHouse to manage Kafka offsets internally and ensures at-least-once delivery,
+making the pipeline restart-safe and production-ready.
+
+Architecture:
+Kafka → ClickHouse Kafka Engine → Materialized View → MergeTree
+
+
 ---
 
 ## Architecture
